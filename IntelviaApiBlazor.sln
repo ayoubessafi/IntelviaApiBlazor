@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntelviaApiBlazor.client", "IntelviaApiBlazor.client\IntelviaApiBlazor.client.csproj", "{C12F5855-F9B9-401D-A9B2-711A091E51D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntelviaApiBlazor.client", "IntelviaApiBlazor.client\IntelviaApiBlazor.client.csproj", "{C12F5855-F9B9-401D-A9B2-711A091E51D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intelvia.shared", "Intelvia.shared\Intelvia.shared.csproj", "{068F65D3-A26D-471B-8DC2-276DBCFA2B69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C12F5855-F9B9-401D-A9B2-711A091E51D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C12F5855-F9B9-401D-A9B2-711A091E51D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C12F5855-F9B9-401D-A9B2-711A091E51D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{068F65D3-A26D-471B-8DC2-276DBCFA2B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{068F65D3-A26D-471B-8DC2-276DBCFA2B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{068F65D3-A26D-471B-8DC2-276DBCFA2B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{068F65D3-A26D-471B-8DC2-276DBCFA2B69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
