@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntelviaApiBlazor.client", "IntelviaApiBlazor.client\IntelviaApiBlazor.client.csproj", "{C12F5855-F9B9-401D-A9B2-711A091E51D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intelvia.shared", "Intelvia.shared\Intelvia.shared.csproj", "{068F65D3-A26D-471B-8DC2-276DBCFA2B69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intelvia.shared", "Intelvia.shared\Intelvia.shared.csproj", "{068F65D3-A26D-471B-8DC2-276DBCFA2B69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
