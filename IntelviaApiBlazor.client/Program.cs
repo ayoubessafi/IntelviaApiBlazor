@@ -1,3 +1,4 @@
+using Blazored.LocalStorage;
 using Intelvia.shared.Services;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -21,6 +22,7 @@ namespace IntelviaApiBlazor.client
             {
                 return new AuthenticationService(URL);
             });
+            builder.Services.AddBlazoredLocalStorage();
             builder.RootComponents.Add<App>("#app");
 
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
