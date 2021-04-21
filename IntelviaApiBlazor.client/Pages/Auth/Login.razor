@@ -9,6 +9,7 @@
 @inject AuthenticationService  authService
 @inject NavigationManager navigationManager
 @inject ILocalStorageService storageService
+@inject AuthenticationStateProvider  authenticationStateProvider
 
 <div class="row">
     <div class="col-12">
@@ -51,9 +52,6 @@
         var result = await authService.LoginUserAsync(model);
         if (result.IsSuccess)
         {
-            message = "welcom to IntelviaApp";
-            messageType = Models.AlertMessageType.Success;
-
             var userInfo = new IntelviaApiBlazor.client.Models.LocalUserInfo()
             {
                 AccessToken = result.Message,
@@ -64,6 +62,9 @@
             };
 
             await storageService.SetItemAsync("User", userInfo);
+            await authenticationStateProvider.GetAuthenticationStateAsync();
+
+            navigationManager.NavigateTo("/");
         }
         else
         {
